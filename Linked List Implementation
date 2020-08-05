@@ -5,8 +5,9 @@ class Node:
     def __init__(self,data = None):
         self.data = data
         self.next = None
+        
 class LinkedList:
-    def __init__(self,count = 0):
+    def __init__(self):
         self.head = Node()
         self.count = 0
        ## The above line creates an empty node and sets it as head
@@ -22,6 +23,7 @@ class LinkedList:
     
     def size(self):
         return self.count
+    
     def display(self):
         arr = []
         cur = self.head
@@ -29,6 +31,7 @@ class LinkedList:
             cur = cur.next
             arr.append(cur.data)
         return arr
+    
     def Insert_At_Beginning(self,data):
         cur = self.head
         next_node = cur.next
@@ -48,6 +51,7 @@ class LinkedList:
             if cur_idx == index: return cur.data
             cur_idx += 1
 #Remove function starts from the start and traverses till it finds a node which has the same data as the input, and then removes it accordingly.    
+    
     def remove(self,data):
         cur = self.head
         while cur.next.data != data:
