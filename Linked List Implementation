@@ -20,11 +20,13 @@ class LinkedList:
             cur = cur.next
         cur.next = new_node
         self.count += 1
-    
+        
+    #size method returns the size of the linked list
     def size(self):
         return self.count
     
-    def display(self):
+    #get_array_from_list method returns the linked list as an array
+    def get_array_from_list(self):
         arr = []
         cur = self.head
         while cur.next != None:
@@ -32,7 +34,20 @@ class LinkedList:
             arr.append(cur.data)
         return arr
     
-    def Insert_At_Beginning(self,data):
+    #display method prints out the values in the linked list
+    def display(self):
+        cur = self.head
+        while cur.next != None:
+            cur = cur.next
+            print(cur.data,end = ' ')
+    
+    def is_empty(self):
+        if self.count == 0:
+            return True
+        else:
+            return False
+    
+    def insert_at_beginning(self,data):
         cur = self.head
         next_node = cur.next
         new_node = Node(data)
@@ -61,10 +76,10 @@ class LinkedList:
         cur.next = next2
         
 l = LinkedList()
-n = int(input())
-for _ in range(n):
-    l.insert(int(input()))
-
-print("The size of the Linked List is {}".format(l.size()))
-l.Insert_At_Beginning(3)
-l.display()
+#n = int(input())
+#for _ in range(n):
+    #l.insert(int(input()))
+#print(l.get_array_from_list())
+#print(l.size())
+#l.display()
+l.is_empty()
