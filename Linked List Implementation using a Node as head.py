@@ -74,6 +74,7 @@ class LinkedList:
         next_node = cur.next
         next2 = next_node.next
         cur.next = next2
+        self.count -= 1
         
 l = LinkedList()
 #n = int(input())
