@@ -1,7 +1,7 @@
 body{
 	color: rgb(40, 40, 58);
-  background-color: whitesmoke;
-	background-image: url(../retrospection/bg4.jpg);
+    background-color: whitesmoke;
+	background-image: url(bg4.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -127,7 +127,7 @@ body{
   }
   .footer-distributed{
     background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
