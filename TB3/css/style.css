@@ -19,10 +19,9 @@ body{
 .topnav {
     background-color:rgb(0, 0, 0, 0);
     overflow: hidden;
-	border-color: rgb(70, 59, 45);
+	border-color: rgb(235, 214, 186)74);
 	background-size: cover;
-    margin: 10px;
-
+	margin: 1%;
   }
   
   /* Style the links inside the navigation bar */
@@ -35,7 +34,8 @@ body{
     text-decoration: none;
     font-size: 17px;
     border-radius:  5px;
-	border-color: rgb(92, 67, 37);
+	border-color: rgb(190, 169, 144);
+	margin: auto;
 
 	.topnav left active{
 	text-decoration: none;
@@ -155,17 +155,17 @@ body .results h2 {
   }
 
 	.input button{
-    position: fixed; 
+    position: relative; 
     background-color: rgb(78, 94, 117);
     color: #f2f2f2;
     border-color: bisque; 
-    top: 60%; 
-    left: 50%; 
-    margin-top: -100px; 
-    margin-left: -70px; 
+    top: 60%;  
+     /* margin-top: -100px; 
+    margin-left: -70px; */
     height: 40px;
-    width: 140px;
-    border-radius: 5px;
+    width: 140px; 
+	border-radius: 5px;
+	
 	}
 	
 	.input button a{
@@ -197,21 +197,20 @@ textarea{
 	line-height: 550px;
 }
 footer{
-	position: fixed;
+	position: relative;
 	bottom: 0;
 }
 .footer-distributed{
-	background-color:rgba(0, 0, 0, 0);
+	background-color:rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
     font: bold 16px sans-serif;
-    padding: 15px 40px;
-    margin-top: 80px;
+    padding: 4px 40px;
+    margin-top: 50px;
     margin-left: 0%;
-    height: 18%;
-
+	height: 18%;
 }
  
 .footer-distributed .footer-left,
